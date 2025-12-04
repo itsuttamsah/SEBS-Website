@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEBS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="image/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="/image/favicon/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            
+            <div class="nav-links" id="nav-links">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>   
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="about-head">About Us</h1>
+    </section>
+
+
+<!-- ------------about us contact--- -->
+
+    <section class="about-us">
+        <h1>We Proceed, What We Promised.</h1>
+        <div class="about-row">
+            <div class="about-col">
+              <p>Suhani English Boarding School is one of the pioneering institutions committed to providing affordable and high-quality education in the region. Since its establishment in 2012 A.D., the school has been dedicated to shaping young minds with academic excellence, moral values, and practical skills to help them thrive in a dynamic world. Guided by our motto, "Making Your Child’s World Better," we continuously strive to create a nurturing and inspiring environment where students can grow intellectually, socially, and emotionally.<br><br>With its modern teaching methodologies, well-equipped classrooms, and experienced faculty, Suhani English Boarding School has created a distinct identity in the field of education. The school ensures a holistic learning environment where students develop critical thinking, leadership qualities, and a sense of responsibility. <br><br>Beyond academics, the school promotes extracurricular activities, cultural programs, and sports, ensuring overall personality development. We believe in nurturing talent, fostering innovation, and encouraging discipline to make every student a confident and responsible global citizen.<br><br>Here, we encourage students to dream big, believe in themselves, and work with full dedication, focus, and integrity to turn their dreams into reality. So, we believe in “Dream. Believe. Achieve.”</p>
+              <a href="" class="hero-btn red-btn desktop-btn">EXPLORE NOW</a>  
+            </div>
+            <div class="about-col">
+                <img src="image/about.jpg">
+                <img src="image/anniversary.png">
+                <a href="" class="hero-btn red-btn mobile-btn">EXPLORE NOW</a>  
+            </div>
+        </div>
+    </section>
+
+    
+
+
+<!-- ----------------------FOOTER---------- -->
+
+<footer class="footer">
+    <div class="footer-top">
+        <!-- Left column -->
+        <div class="footer-left">
+            <h2>About Us</h2>
+            <p>
+                Suhani English Boarding School is one of the pioneering institutions committed to providing affordable and high-quality education in the region. Since its establishment in 2012 A.D., the school has been dedicated to shaping young minds with academic excellence, moral values, and practical skills to help them thrive in a dynamic world. Guided by our motto, "Making Your Child’s World Better," we continuously strive to create a nurturing and inspiring environment where students can grow intellectually, socially, and emotionally.
+            </p>
+        </div>
+
+        <!-- Right column -->
+        <div class="footer-right">
+            <div class="social-head">
+                <p>Stay Connected With Us</p>
+                <h2>Follow Us On</h2>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/Suhaniebschool/" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/suhaniebschool/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@suhaniebschool" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+        <p>Copyright © 2025 Uttu, Designed and Developed By Uttam Sah</p>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script>
+        let navLinks=document.getElementById("nav-links");
+        function showMenu()
+        {
+            navLinks.style.right ="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right ="-200px";
+        }
+          const slider = document.querySelector('.slider');
+            const leftBtn = document.querySelector('.slider-btn.left');
+            const rightBtn = document.querySelector('.slider-btn.right');
+            const items = document.querySelectorAll('.academic-col');
+
+            // Scroll functions
+            function scrollNext() {
+                slider.scrollBy({ left: 220, behavior: 'smooth' });
+            }
+
+            function scrollPrev() {
+                slider.scrollBy({ left: -220, behavior: 'smooth' });
+            }
+
+            // Arrow button events
+            leftBtn.addEventListener('click', scrollPrev);
+            rightBtn.addEventListener('click', scrollNext);
+
+            // Click on each item to go to next
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                scrollNext();
+                });
+            });
+            
+            
+            
+
+    </script>
+</body>
+</html>
